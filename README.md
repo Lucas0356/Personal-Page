@@ -1,2 +1,2 @@
-# P-gina-Personal
-Proyecto personal
+# Personal page
+This is a personal project.
