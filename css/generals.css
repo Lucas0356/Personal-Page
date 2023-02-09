@@ -52,6 +52,7 @@ header{
 }
 
 #navbar div.brand {
+    min-width: 10%;
     font-size: 15px;
     margin-right: auto;
     color: #fff;
@@ -155,14 +156,11 @@ footer{
 /* #######################################################################
 ####################################################################### */
 
-/* ESTILOS PANTALLAS MENORES A 500px */
+/* ESTILOS PANTALLAS MENORES A 480px */
 
 @media screen and (max-width: 480px){
     /*ESTILOS PARA EL ENCABEZADO */
     .menu li {
         margin: 5px;
-    }
-    #navbar{
-        padding: 0.5em;
     }
 }
