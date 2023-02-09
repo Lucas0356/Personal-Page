@@ -115,7 +115,7 @@ footer{
 
 /* ESTILOS PANTALLAS MENORES A 1200px */
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1000px){
     /*ESTILOS PARA EL ENCABEZADO */
     #navbar{
         font-size: 17px;
@@ -162,5 +162,17 @@ footer{
     /*ESTILOS PARA EL ENCABEZADO */
     .menu li {
         margin: 5px;
+    }
+}
+
+/* #######################################################################
+####################################################################### */
+
+/* ESTILOS PANTALLAS MENORES A 369px */
+
+@media screen and (max-width: 369px){
+    /*ESTILOS PARA EL ENCABEZADO */
+    #navbar{
+        padding: 0.5em;
     }
 }
