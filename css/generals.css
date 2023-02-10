@@ -1,6 +1,8 @@
 /* #######################################################################
 ####################################################################### */
 
+    /* box-shadow: 1px 1px 15px #666666;  PARA LA FOTO*/
+
 /* Importamos la fuente Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
@@ -44,46 +46,128 @@ header{
 }
 
 #navbar{
-    display: flex;
     padding: 1em;
     background-color: #015094;
-    align-items: baseline; /* Elementos en la misma línea */
     font-weight: bold;
 }
 
-#navbar div.brand {
-    min-width: 10%;
+div.brand {
+    display: flex;
+    align-content: center;
+    align-items: center;
     font-size: 15px;
     margin-right: auto;
     color: #fff;
 }
 
-#navbar div.brand h2 spand {
+div.brand h2 spand {
     color: #e82226;
 }
 
-.menu {
+/* estilos del menu movile */
+
+.menu-movile{
+    display: none; /* Desactivado por defecto, se activa en pantallas de móviles */
+}
+
+div.brand-and-button{
+    display: flex;
+    align-items: center;
+}
+
+.menu-button{
+    background-color:  transparent; /* Borramos fondo de los botones */
+    border: 0;  /* Quitamos los bordes de los botones */
+    color: #ffffff;
+    font-size: 17px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.menu-button:hover {
+    color: #eb4c49;
+    transition: all 0,8s linear;
+}
+
+#menu-options-movile{
+    display: none;
+    background-color: #015094;
+}
+
+#menu-options-movile.active{
+    display: block;
+    position: fixed; /* Posición fija */
+    min-height: 100vh;
+    width: 100%;
+    transition: all 500ms linear;
+    left: 0; /* Debido a que el ancho es de 100%, con esto ocultaremos el menú */
+}
+
+#menu-options-movile li{
+    list-style: none; /* Listas sin diseño */
+    border-bottom: 1px solid #476387;
+}
+
+#menu-options-movile li:first-child{
+    margin-top: 2%;
+    border-top: 1px solid #476387;
+}
+
+#menu-options-movile li a{
+    padding: 15px 10px; /* Espaciado, 20 arriba y abajo, 10 a los lados */
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+#menu-options-movile li:hover{
+    background-color: #eb4c49;
+    transition: all 0,5s linear;
+}
+
+#menu-options-movile li a p{
+    margin-left: 8%;
+}
+
+#menu-options-movile ul li a span{
+    color: #fff;
+}
+
+/* estilos del menu de escritorio */
+
+.menu-desktop{
+    display: flex;
+    align-items: baseline; /* Elementos en la misma línea */
+}
+
+.menu-options-desktop {
     display: flex;
     max-width: 90%;
     justify-content: flex-end; /* Ponemos las opciones del menú al final */
 }
 
-.menu li {
+.menu-options-desktop li {
     margin: 20px;
     list-style-type: None;
 }
 
-.menu li a {
+.menu-options-desktop li a {
     color: #fff;
     text-decoration: none;
     padding: 15px 10px; /* Relleno 15px arriba y abajo, 10px derecha e izquierda */
 }
 
-.menu li a.active {
+.menu-options-desktop li a.active {
     color: #e82226;
 }
 
-.menu li a:hover {
+.menu-options-desktop li a:hover {
     background-color: #e82226;
     color: #015094;
     transition: ease-in .4s;
@@ -117,26 +201,8 @@ footer{
 
 @media screen and (max-width: 1000px){
     /*ESTILOS PARA EL ENCABEZADO */
-    #navbar{
-        font-size: 17px;
-    }
-    .menu li a {
+    .menu-desktop li a {
         padding: 10px 5px; /* Relleno 10px arriba y abajo, 10px derecha e izquierda */
-    }
-}
-
-/* #######################################################################
-####################################################################### */
-
-/* ESTILOS PANTALLAS MENORES A 800px */
-
-@media screen and (max-width: 800px){
-    /*ESTILOS PARA EL ENCABEZADO */
-    .menu li {
-        margin: 12px;
-    }
-    .menu li a {
-        padding: 5px; 
     }
 }
 
@@ -148,31 +214,10 @@ footer{
 
 @media screen and (max-width: 600px){
     /*ESTILOS PARA EL ENCABEZADO */
-    #navbar{
-        font-size: 13px;
+    .menu-desktop{
+        display: none;
     }
-}
-
-/* #######################################################################
-####################################################################### */
-
-/* ESTILOS PANTALLAS MENORES A 480px */
-
-@media screen and (max-width: 480px){
-    /*ESTILOS PARA EL ENCABEZADO */
-    .menu li {
-        margin: 5px;
-    }
-}
-
-/* #######################################################################
-####################################################################### */
-
-/* ESTILOS PANTALLAS MENORES A 369px */
-
-@media screen and (max-width: 369px){
-    /*ESTILOS PARA EL ENCABEZADO */
-    #navbar{
-        padding: 0.5em;
+    .menu-movile{
+        display: block;
     }
 }

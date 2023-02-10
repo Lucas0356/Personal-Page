@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Lucas Moltedo">
         <link rel="icon" href="#">
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/generals.css">
@@ -17,15 +17,54 @@
         <div class="body-container">
             <header>
                 <nav id="navbar">
-                    <div class="brand">
-                        <h2> <spand> L </spand> M </h2>
+                    <div class="menu-desktop">
+                        <div class="brand">
+                            <h2> <spand> L </spand> M </h2>
+                        </div>
+                        <ul class="menu-options-desktop">
+                            <li> <a href="index.html" class="active">Home</a></li>
+                            <li> <a href="portfolio.html">Portfolio</a></li>
+                            <li> <a href="about-me.html">About me</a></li>
+                            <li> <a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-                    <ul class="menu">
-                        <li> <a href="index.html" class="active">Home</a></li>
-                        <li> <a href="portfolio.html">Portfolio</a></li>
-                        <li> <a href="about-me.html">About me</a></li>
-                        <li> <a href="contact.html">Contact</a></li>
-                    </ul>
+                    <div class="menu-movile">
+                        <div class="brand-and-button">
+                            <div class="brand">
+                                <h2> <spand> L </spand> M </h2>
+                            </div>
+                            <button class="menu-button"> <!-- Botón para menú dispositivos móviles -->
+                                <span class="material-symbols-outlined"> menu </span>  <!-- Importamos el ícono -->
+                            </button>
+                        </div>
+                        <ul id="menu-options-movile">
+                            <li>
+                                <a href="index.html">
+                                    <span class="material-symbols-outlined">account_circle</span>
+                                    <p>About me</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">
+                                    <span class="material-symbols-outlined">work</span>
+                                    <p>Portfolio</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="technologies.html">
+                                    <span class="material-symbols-outlined">laptop_mac</span>
+                                    <p>Technologies</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    <span class="material-symbols-outlined">call</span>
+                                    <p>Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
 
@@ -58,5 +97,8 @@
                 </a>
             </div>
         </footer>
+
+        <!-- Javascript -->
+        <script src="js/general.js" charset="UTF-8"></script>
     </body>
 </html>
