@@ -13,6 +13,9 @@ const menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', function () {
     // Con "getElementById" seleccionamos un elemento por un ID:
     document.getElementById('menu-options-movile').classList.toggle('active')
+    document.getElementById('main').classList.toggle('ocultar')
+    document.getElementById('footer').classList.toggle('ocultar')
     // Con ".classList.toggle()" le podemos agregar/quitar una clase (depende si la tiene), a un elemento
     // Con esto ya tenemos la función de mostrar/ocultar el menú
 })
+

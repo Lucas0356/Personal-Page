@@ -62,7 +62,7 @@ div.brand {
 }
 
 div.brand h2 spand {
-    color: #e82226;
+    color: #d72c2c;
 }
 
 /* estilos del menu movile */
@@ -106,6 +106,10 @@ div.brand-and-button{
     left: 0; /* Debido a que el ancho es de 100%, con esto ocultaremos el menú */
 }
 
+.ocultar{  /* ocultamos el main y el footer cuando se activa el menu movile */
+    display: none;
+}
+
 #menu-options-movile li{
     list-style: none; /* Listas sin diseño */
     border-bottom: 1px solid #476387;
@@ -127,7 +131,7 @@ div.brand-and-button{
 }
 
 #menu-options-movile li:hover{
-    background-color: #eb4c49;
+    background-color: #d72c2c;
     transition: all 0,5s linear;
 }
 
@@ -167,11 +171,11 @@ div.brand-and-button{
 }
 
 .menu-options-desktop li a.active {
-    color: #e82226;
+    color: #d72c2c;
 }
 
 .menu-options-desktop li a:hover {
-    background-color: #e82226;
+    background-color: #d72c2c;
     color: #015094;
     transition: ease-in .4s;
 }
@@ -184,7 +188,7 @@ footer{
     height: 100%;
     border-top: 2px solid #fff;
     margin-top: auto;
-    background-color: #e82226;
+    background-color: #d72c2c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,6 +221,21 @@ footer ul.footer-sotial-network li a {
     /*ESTILOS PARA EL ENCABEZADO */
     .menu-desktop li a {
         padding: 10px 5px; /* Relleno 10px arriba y abajo, 10px derecha e izquierda */
+    }
+}
+
+/* #######################################################################
+####################################################################### */
+
+/* ESTILOS PANTALLAS MAYORES A 700px */
+
+@media screen and (min-width: 700px){
+    /* Evitamos un problema de que si abren el menu movile y agrandan la pantalla, el main y el footer no aparecen  */
+    #main{
+        display: block;
+    }
+    #footer{
+        display: flex;
     }
 }
 
