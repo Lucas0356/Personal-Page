@@ -49,6 +49,7 @@ header{
     padding: 1em;
     background-color: #015094;
     font-weight: bold;
+    font-size: 17px;
 }
 
 div.brand {
@@ -79,7 +80,6 @@ div.brand-and-button{
     background-color:  transparent; /* Borramos fondo de los botones */
     border: 0;  /* Quitamos los bordes de los botones */
     color: #ffffff;
-    font-size: 17px;
     padding: 5px;
     cursor: pointer;
     display: flex;
@@ -143,7 +143,10 @@ div.brand-and-button{
 
 .menu-desktop{
     display: flex;
-    align-items: baseline; /* Elementos en la misma línea */
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    /* align-items: baseline;  Elementos en la misma línea */
 }
 
 .menu-options-desktop {
@@ -188,16 +191,7 @@ footer{
 ##########################################################################
 ####################################################################### */
 
-/* ESTILOS PANTALLAS MENORES A 1200px */
-
-@media screen and (min-width: 1200px){
-    /*ESTILOS PARA EL ENCABEZADO */
-    #navbar{
-        font-size: 20px;
-    }
-}
-
-/* ESTILOS PANTALLAS MENORES A 1200px */
+/* ESTILOS PANTALLAS MENORES A 1000px */
 
 @media screen and (max-width: 1000px){
     /*ESTILOS PARA EL ENCABEZADO */
