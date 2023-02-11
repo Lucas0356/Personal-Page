@@ -181,9 +181,29 @@ div.brand-and-button{
 
 /* Estilos footer */
 footer{
+    height: 100%;
     border-top: 2px solid #fff;
     margin-top: auto;
-    background-color: #e82226;;
+    background-color: #e82226;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.footer-info{
+    text-align: center;
+}
+
+footer ul.footer-sotial-network{
+    list-style-type: None;
+    display: flex;
+}
+
+footer ul.footer-sotial-network li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
 }
 
 /* #######################################################################
@@ -200,13 +220,12 @@ footer{
     }
 }
 
-
 /* #######################################################################
 ####################################################################### */
 
-/* ESTILOS PANTALLAS MENORES A 600px */
+/* ESTILOS PANTALLAS MENORES A 700px */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     /*ESTILOS PARA EL ENCABEZADO */
     .menu-desktop{
         display: none;
