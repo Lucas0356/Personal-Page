@@ -10,39 +10,43 @@ body div.body-container{
 
 main{
     display: flex;
-    flex-grow: 1;
-    border: 2px solid black;
-    padding: 5%;
+    padding: 3%;
+}
+
+.main-content{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #7CB6E0;
 }
 
 .about-me{
-    width: 70%;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 2%;
 }
 
 .about-me h1{
-    color: #fff;
+    color: #045292;
     font-size: 60px;
-}
-
-.about-me h1 span{
-    color: #d72c2c;
+    text-align: center;
 }
 
 .about-me p{
     margin-top: 15px;
-    width: 70%;
-    font-size: larger;
+    color: #045292;
+    font-size: 20px;
     font-weight: bolder;
     text-align: justify;
 }
 
 .about-me  a.download-button{
-    margin-top: 15px;
+    margin-top: 50px;
     width: 150px;
     border-radius: 20px;
-    background-color: #d72c2c;
+    background-color: #045292;
     box-shadow: 1px 3px 11px -5px;
     text-decoration: none;
 }
@@ -55,7 +59,8 @@ main{
 
 div.download-button-content{
     padding: 10px 20px;
-    color: black;
+    color: #7CB6E0;
+    font-weight: bold;
     display: flex;
     align-items: center;
 }
@@ -65,46 +70,26 @@ button.download-cv{
     background-color:  transparent;
     border: none;
     font-weight: bold;
+    color: #7CB6E0;
 }
 
-.personal-data{
-    width: 30%;
-    border-radius: 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
+main img{
+    box-shadow: 1px 1px 15px #280000;
+    margin: 2%;
+    min-width: 250px;
+    width: 18%;
 }
 
-.personal-data img{
-    box-shadow: 1px 1px 15px #666666;
-    height: 150px;
-    width: 150px;
-}
+/* #######################################################################
+####################################################################### */
 
-.personal-data ul{
-    border-radius: 30px;
-    margin-top: 5px;
-    width: 100%;
-    background-color: #d72c2c;
-}
+/* ESTILOS PANTALLAS MENORES A 800px */
 
-.personal-data ul li{
-    list-style: none;
-    padding: 5px;
-}
-
-p.info-text{
-    font-size: medium;
-}
-
-p.title{
-    font-weight: bold;
-    margin-right: 5px;
-    font-size: larger;
+@media screen and (max-width: 800px){
+    /*ESTILOS PARA EL MAIN */
+    .main-content{
+        flex-direction: column;
+    }
 }
 
 /* #######################################################################
