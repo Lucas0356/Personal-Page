@@ -1,7 +1,6 @@
 /* #######################################################################
 ####################################################################### */
 
-    /* box-shadow: 1px 1px 15px #666666;  PARA LA FOTO*/
 
 /* Importamos la fuente Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
@@ -22,6 +21,7 @@ body {
 body div.body-container{
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 /* #######################################################################
@@ -41,6 +41,7 @@ body div.body-container{
 /* Estilos header */
 
 header{
+    min-height: 5vh;
     width: 100%;
     border-bottom: 2px solid #fff;
 }
@@ -61,7 +62,7 @@ div.brand {
     color: #fff;
 }
 
-div.brand h2 spand {
+div.brand h2 span {
     color: #d72c2c;
 }
 
@@ -232,7 +233,7 @@ footer ul.footer-sotial-network li a {
 @media screen and (min-width: 700px){
     /* Evitamos un problema de que si abren el menu movile y agrandan la pantalla, el main y el footer no aparecen  */
     #main{
-        display: block;
+        display: flex;
     }
     #footer{
         display: flex;
