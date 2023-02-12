@@ -12,7 +12,7 @@
 
 body {
     min-height: 100vh;
-    padding-top: 70px; /* El relleno es igual a la altura del encabezado para que no lo tape */
+    padding-top: 90px; /* El relleno es igual a la altura del encabezado para que no lo tape */
     background-color: #045292;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -38,7 +38,7 @@ body {
 
 header{
     width: 100%;
-    height: 70px;
+    height: 90px;
     background-color: #045292;
     border-bottom: 3px solid #7CB6E0;
     position: fixed;
@@ -99,7 +99,7 @@ div.brand-and-button{
 
 #menu-options-movile{
     display: none;
-    background-color: #015094;
+    background-color: #045292;
 }
 
 #menu-options-movile.active{
