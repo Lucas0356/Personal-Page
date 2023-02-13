@@ -18,7 +18,6 @@ main{
     display: flex;
     align-content: center;
     align-items: center;
-    background-color: #7CB6E0;
 }
 
 .about-me{
@@ -30,14 +29,14 @@ main{
 }
 
 .about-me h1{
-    color: #045292;
+    color: #75E6DA;
     font-size: 3.5rem;
     text-align: center;
 }
 
 .about-me p{
     margin-top: 15px;
-    color: #045292;
+    color: #D4F1F4;
     font-size: 1.3rem;
     font-weight: bolder;
     text-align: justify;
@@ -47,20 +46,20 @@ main{
     margin-top: 5%;
     width: 150px;
     border-radius: 20px;
-    background-color: #045292;
+    background-color: #05445E;
     box-shadow: 1px 3px 11px -5px;
     text-decoration: none;
 }
 
 .about-me  a.download-button:hover{
-    background-color: #fff;
+    background-color: #D4F1F4;
     box-shadow: none;
     transition: ease-in 0.3s;
 }
 
 div.download-button-content{
     padding: 10px 20px;
-    color: #7CB6E0;
+    color: #75E6DA;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -71,7 +70,7 @@ button.download-cv{
     background-color:  transparent;
     border: none;
     font-weight: bold;
-    color: #7CB6E0;
+    color: #75E6DA;
 }
 
 main img{
