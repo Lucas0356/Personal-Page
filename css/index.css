@@ -77,7 +77,7 @@ button.download-cv{
 main img{
     box-shadow: 1px 1px 12px #280000;
     margin: 3%;
-    min-width: 250px;
+    min-width: 300px;
     width: 18%;
 }
 
@@ -90,6 +90,9 @@ main img{
     /*ESTILOS PARA EL MAIN */
     .main-content{
         flex-direction: column;
+    }
+    main img{
+        min-width: 250px;
     }
 }
 
