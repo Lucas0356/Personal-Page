@@ -289,3 +289,15 @@ footer ul.footer-sotial-network li a {
         font-size: 12px;
     }
 }
+
+/* #######################################################################
+####################################################################### */
+
+/* ESTILOS PANTALLAS ALTURA MAYOR A 1050px */
+
+@media screen and (min-height: 1050px){
+    /*ESTILOS PARA EL MAIN */
+    #main{
+        display: column;
+    }
+}

@@ -98,3 +98,11 @@ main img{
 /* #######################################################################
 ####################################################################### */
 
+/* ESTILOS PANTALLAS ALTURA MAYOR A 1050px */
+
+@media screen and (min-height: 1050px){
+    /*ESTILOS PARA EL MAIN */
+    .main-content{
+        flex-direction: column;
+    }
+}
