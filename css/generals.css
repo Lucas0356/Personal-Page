@@ -240,7 +240,12 @@ footer ul.footer-sotial-network li a {
     color: #75E6DA;
     text-decoration: none;
     font-size: 1.8rem;
-    margin: 5px;
+    margin: 5px 10px;
+}
+
+footer ul.footer-sotial-network li a:hover {
+    color: #D4F1F4;
+    transition: all 0,5s linear;
 }
 
 /* #######################################################################
@@ -287,17 +292,5 @@ footer ul.footer-sotial-network li a {
     }
     html{
         font-size: 12px;
-    }
-}
-
-/* #######################################################################
-####################################################################### */
-
-/* ESTILOS PANTALLAS ALTURA MAYOR A 1050px */
-
-@media screen and (min-height: 1050px){
-    /*ESTILOS PARA EL MAIN */
-    #main{
-        display: column;
     }
 }
