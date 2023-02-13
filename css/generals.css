@@ -5,6 +5,10 @@
 /* Importamos la fuente Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
+html {
+    font-size: 16px;
+}
+
 /* #######################################################################
 ####################################################################### */
 
@@ -49,24 +53,56 @@ header{
 }
 
 #navbar{
-    margin: 5px;
+    padding: 5px 8px;
     font-weight: bold;
-    font-size: 17px;
     width: 100%;
 }
 
-div.brand {
+/* estilos del menu de escritorio */
+
+.menu-desktop{
     display: flex;
     align-content: center;
     align-items: center;
-    font-size: 15px;
-    margin-right: auto;
-    color: #7CB6E0;
-    padding-left: 10px;
+    width: 100%;
 }
 
-div.brand h2 span {
+.menu-desktop div.brand {
+    font-size: 1.5rem;
+    margin-right: auto;
+    color: #7CB6E0;
+}
+
+.menu-desktop div.brand h2 span {
     color: #d72c2c;
+}
+
+.menu-options-desktop {
+    font-size: 1rem;
+    display: flex;
+    max-width: 90%;
+    justify-content: flex-end; /* Ponemos las opciones del menú al final */
+}
+
+.menu-options-desktop li {
+    margin: 20px;
+    list-style-type: None;
+}
+
+.menu-options-desktop li a {
+    color: #7CB6E0;
+    text-decoration: none;
+    padding: 15px 10px; /* Relleno 15px arriba y abajo, 10px derecha e izquierda */
+}
+
+.menu-options-desktop li a.active {
+    color: #D5423F;
+}
+
+.menu-options-desktop li a:hover {
+    background-color: #D54946;
+    color: #015094;
+    transition: ease-in .4s;
 }
 
 /* estilos del menu movile */
@@ -78,28 +114,42 @@ div.brand h2 span {
 div.brand-and-button{
     display: flex;
     align-items: center;
+    align-content: center;
+}
+
+.brand-and-button div.brand {
+    margin-right: auto;
+    color: #7CB6E0;
+    font-size: 1.2rem;
+}
+
+.brand-and-button div.brand h2 span {
+    color: #d72c2c;
 }
 
 .menu-button{
     background-color:  transparent; /* Borramos fondo de los botones */
     border: 0;  /* Quitamos los bordes de los botones */
     color: #7CB6E0;
-    padding: 5px;
     cursor: pointer;
     display: flex;
     align-content: center;
     align-items: center;
-    align-self: flex-end;
+}
+
+.menu-button span{
+    font-size: 2rem;
 }
 
 .menu-button:hover {
-    color: #eb4c49;
+    color: #D5423F;
     transition: all 0,8s linear;
 }
 
 #menu-options-movile{
     display: none;
     background-color: #045292;
+    font-size: 1rem;
 }
 
 #menu-options-movile.active{
@@ -136,7 +186,7 @@ div.brand-and-button{
 }
 
 #menu-options-movile li:hover{
-    background-color: #d72c2c;
+    background-color: #D54946;
     transition: all 0,5s linear;
 }
 
@@ -148,41 +198,6 @@ div.brand-and-button{
     color: #fff;
 }
 
-/* estilos del menu de escritorio */
-
-.menu-desktop{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.menu-options-desktop {
-    display: flex;
-    max-width: 90%;
-    justify-content: flex-end; /* Ponemos las opciones del menú al final */
-}
-
-.menu-options-desktop li {
-    margin: 20px;
-    list-style-type: None;
-}
-
-.menu-options-desktop li a {
-    color: #7CB6E0;
-    text-decoration: none;
-    padding: 15px 10px; /* Relleno 15px arriba y abajo, 10px derecha e izquierda */
-}
-
-.menu-options-desktop li a.active {
-    color: #d72c2c;
-}
-
-.menu-options-desktop li a:hover {
-    background-color: #d72c2c;
-    color: #015094;
-    transition: ease-in .4s;
-}
 
 /* #######################################################################
 ####################################################################### */
@@ -202,6 +217,14 @@ footer div.footer-info{
     text-align: center;
 }
 
+footer div.footer-info h3{
+    font-size: 1.5rem;
+}
+
+footer div.footer-info h5{
+    font-size: 1rem;
+}
+
 footer ul.footer-sotial-network{
     list-style-type: None;
     display: flex;
@@ -210,7 +233,7 @@ footer ul.footer-sotial-network{
 footer ul.footer-sotial-network li a {
     color: #10101E;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.8rem;
     margin: 5px;
 }
 
@@ -255,5 +278,8 @@ footer ul.footer-sotial-network li a {
     }
     .menu-movile{
         display: block;
+    }
+    html{
+        font-size: 12px;
     }
 }

@@ -31,20 +31,20 @@ main{
 
 .about-me h1{
     color: #045292;
-    font-size: 60px;
+    font-size: 3.5rem;
     text-align: center;
 }
 
 .about-me p{
     margin-top: 15px;
     color: #045292;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bolder;
     text-align: justify;
 }
 
 .about-me  a.download-button{
-    margin-top: 50px;
+    margin-top: 5%;
     width: 150px;
     border-radius: 20px;
     background-color: #045292;
@@ -75,8 +75,8 @@ button.download-cv{
 }
 
 main img{
-    box-shadow: 1px 1px 15px #280000;
-    margin: 2%;
+    box-shadow: 1px 1px 12px #280000;
+    margin: 3%;
     min-width: 250px;
     width: 18%;
 }
@@ -86,7 +86,7 @@ main img{
 
 /* ESTILOS PANTALLAS MENORES A 800px */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
     /*ESTILOS PARA EL MAIN */
     .main-content{
         flex-direction: column;
@@ -96,11 +96,3 @@ main img{
 /* #######################################################################
 ####################################################################### */
 
-/* ESTILOS PANTALLAS MENORES A 700px */
-
-@media screen and (max-width: 700px){
-    /*ESTILOS PARA EL ENCABEZADO */
-    main{
-        flex-direction: column;
-    }
-}
