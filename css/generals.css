@@ -157,7 +157,7 @@ div.brand-and-button{
 #menu-options-movile{
     display: none;
     background-color: #05445E;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #menu-options-movile.active{
