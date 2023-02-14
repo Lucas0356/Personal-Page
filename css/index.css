@@ -65,8 +65,7 @@ main{
 }
 
 .about-me  a.download-button:hover{
-    background-color: #D4F1F4;
-    box-shadow: none;
+    background-color: #280000;
     transition: ease-in 0.3s;
 }
 
