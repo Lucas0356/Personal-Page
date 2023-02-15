@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
         <link rel="stylesheet" href="css/generals.css">
+        <link rel="stylesheet" href="css/contact.css">
         <title>Contact - Lucas Moltedo</title>
     </head>
 
@@ -68,23 +69,25 @@
 
         <main id="main">
             <h1>CONTACT ME</h1>
-            <form>
-                <input type="text" id="inNombre" placeholder="Name" class ="estilo-input">
-                <input type="tel" id="inTelefono" placeholder="Phone number" class ="estilo-input">
-                <input type="text" id="inNombre" placeholder="Subject" class ="estilo-input">
-                <textarea id="" cols="30" rows="10" placeholder="Message" class ="estilo-input"></textarea>
-                <input type="submit" value="Send Message" class="boton-info">
-            </form>
-            <ul class="contact-media">
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>lucasmoltedo03@gmail.com</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+54 291 527 3604</p>
-                </li>
-            </ul>
+            <div class="main-content">
+                <form>
+                    <input type="text" id="inName" placeholder="Name" class ="inputs">
+                    <input type="tel" id="inPhone" placeholder="Phone number" class ="inputs">
+                    <input type="text" id="inNombre" placeholder="Subject" class ="inputs">
+                    <textarea id="teMessage" cols="30" rows="2" placeholder="Message" class ="inputs"></textarea>
+                    <input type="submit" value="Send Message" class ="inputs">
+                </form>
+                <ul class="contact-media">
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>lucasmoltedo03@gmail.com</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+54 291 527 3604</p>
+                    </li>
+                </ul>
+            </div>
         </main>
 
         <footer id="footer">

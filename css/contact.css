@@ -1,0 +1,112 @@
+/* #######################################################################
+####################################################################### */
+
+
+/* Estilos main */
+
+
+/* Estilos del formulario */
+
+main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+main h1{
+    color: #75E6DA;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.main-content{
+    display: flex;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+form .inputs{
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+form textarea.inputs{
+    height: 100%;
+}
+
+form input[type="submit"]{
+    background-color: #05445E;
+    color: #75E6DA;
+    box-shadow: 1px 3px 5px 2px #280000;
+    margin-top: 5%;
+    min-width: 150px;
+    max-width: 30%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background-color: #280000;
+    transition: ease-in 0.3s;
+}
+
+ul.contact-media{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul.contact-media li{
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    font-size: 1rem;
+}
+
+ul.contact-media li i{
+    margin-right: 5%;
+    padding: 10px;
+    background-color: #75E6DA;
+    color: #05445E;
+    border-radius: 50%;
+}
+
+ul.contact-media li i:hover{
+    box-shadow: 1px 3px 5px 2px #05445E;
+    cursor: pointer;
+}
+
+ul.contact-media li p{
+    color: #280000;
+    font-weight: bold;
+}
+
+/* #######################################################################
+####################################################################### */
+
+/* ESTILOS PANTALLAS ALTURA MAYOR A 1050px */
+
+@media screen and (max-width: 700px){
+    /*ESTILOS PARA EL MAIN */
+    .main-content{
+        flex-direction: column;
+    }
+}
